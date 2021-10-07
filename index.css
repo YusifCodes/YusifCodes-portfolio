@@ -438,6 +438,7 @@ svg{
 
 form{
   margin: 0 auto;
+  margin-top: 30px;
   width: 300px;
   text-align: center;
   -moz-user-select: none;
@@ -481,6 +482,10 @@ form{
 
 .contacts-bth{
   margin-top: 15%;
+}
+
+.submit{
+  margin-bottom: 30px;
 }
 
 /* CONTACT END */
@@ -629,6 +634,10 @@ form{
   .contacts{
     margin-top: 21%;
     font-size: 20px;
+  }
+
+  .submit{
+    margin-bottom: 90px;
   }
 
   .contacts-bth{
