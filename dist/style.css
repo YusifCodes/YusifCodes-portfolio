@@ -562,11 +562,11 @@ and (max-width : 767px) {
     }
 
     .black-container{
-        width: 100% !important;
+        width: 100vw !important;
     }
 
     .centered-content{
-        width: 100%;
+        width: 100vw;
     }
 
     .logo{
