@@ -193,8 +193,6 @@ body{
 }
 
 .arrow{
-    width: 27px;
-    height: auto;
     position: absolute;
     display: block;
     text-align: center;
@@ -371,11 +369,6 @@ body{
     animation-delay: .25s;
 }
 
-.e3{
-    animation: slideinentries 1s forwards;
-    animation-delay: .5s;
-}
-
 .entry-content-list li{
     margin-right: 50px;
     color: #F4F4E5;
@@ -387,22 +380,33 @@ body{
     margin-bottom: 5px;
 }
 
-.project li:last-child{
-    padding-top: 12px;
-    padding-bottom: 18px;
+.work li{
+    min-width: 550px;
 }
 
-.a-button{
-    margin-top: 12px;
-    font-size: 20px;
-    padding: 8px 8px 8px 8px;
-    border: 1px solid #F4F4E5;
-    color: #F4F4E5;
+.work li:nth-child(2){
+    min-width: 250px;
+    margin-right: none;
 }
 
-.project{
-    padding-bottom: 0px;
+.work li:nth-child(3){
+    min-width: 0px;
+    margin-right: none;
 }
+
+.project li{
+    min-width: 250px;
+}
+
+.project li:nth-child(2){
+    min-width: 510px;
+}
+
+.project li:nth-child(3){
+    min-width: 0px;
+    margin-right: none;
+}
+
 /* CONTACT */
 
 .contact-positioning{
@@ -503,17 +507,6 @@ and (min-width : 768px) and (max-width:1279px) and (min-height: 500px){
 and (min-width : 768px)   
 and (max-width : 1024px)  and (orientation:portrait){
 
-    @keyframes slideoutblcont{
-        0%{
-            width: 100%;
-            clip-path: inset(0 0 0 100%);
-        }
-        100%{
-            width: 100%;
-            clip-path: inset(0 0 0 0);
-        }
-    }
-
     .white-container{
         display: none;
         visibility: hidden;
@@ -563,18 +556,6 @@ and (max-width : 1024px)  and (orientation:portrait){
 
 @media only screen   
 and (max-width : 767px) {
-
-    @keyframes slideoutblcont{
-        0%{
-            width: 100%;
-            clip-path: inset(0 0 0 100%);
-        }
-        100%{
-            width: 100%;
-            clip-path: inset(0 0 0 0);
-        }
-    }
-
     .white-container{
         display: none;
         visibility: hidden;
